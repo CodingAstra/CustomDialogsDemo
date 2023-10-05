@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World! This is TextView"
+        android:textSize="20sp"
+        android:layout_marginTop="100dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Image Button ->"
+            android:textSize="20sp"/>
+        <ImageButton
+            android:id="@+id/ib_imageButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="image"
+            android:src="@drawable/star"
+            android:backgroundTint="@color/black"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_alertDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ALERT DIALOG"
+        android:layout_margin="25dp"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/btn_customDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CUSTOM DIALOG"
+        android:layout_margin="25dp"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/btn_customProgressDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CUSTOM PROGRESS DIALOG"
+        android:layout_margin="25dp"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
